@@ -7,9 +7,9 @@ class BallScaleProgressIndicator extends SpinnerIndicator {
 
   @override
   paint(Canvas canvas, Paint? paint, Size size) {
-    var circleSpacing = 4;
-    var width = size.width;
-    var height = size.height;
+    const circleSpacing = 4;
+    final width = size.width;
+    final height = size.height;
     paint!.color = paint.color.withAlpha(mAlpha);
     canvas.drawCircle(Offset(width / 2, height / 2),
         (width / 2 - circleSpacing) * mScale, paint);

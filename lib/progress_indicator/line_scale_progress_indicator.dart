@@ -2,17 +2,17 @@ import 'package:flutter/widgets.dart';
 import 'package:loading_progress_indicator/progress_indicator.dart';
 
 class LineScaleProgressIndicator extends SpinnerIndicator {
-  var scaleYDoubles = [1.0, 1.0, 1.0, 1.0, 1.0];
+  final scaleYDoubles = [1.0, 1.0, 1.0, 1.0, 1.0];
 
   @override
   paint(Canvas canvas, Paint? paint, Size size) {
-    var translateX = size.width / 11;
-    var translateY = size.height / 2;
+    final translateX = size.width / 11;
+    final translateY = size.height / 2;
     for (int i = 0; i < 5; i++) {
       canvas.save();
       canvas.translate((2 + i * 2) * translateX - translateX / 2, translateY);
       canvas.scale(1.0, scaleYDoubles[i]);
-      var rectF = RRect.fromLTRBR(-translateX / 2, -size.height / 2.5,
+      final rectF = RRect.fromLTRBR(-translateX / 2, -size.height / 2.5,
           translateX / 2, size.height / 2.5, const Radius.circular(5));
       canvas.drawRRect(rectF, paint!);
       canvas.restore();
@@ -23,9 +23,9 @@ class LineScaleProgressIndicator extends SpinnerIndicator {
   List<AnimationController> animation() {
     List<AnimationController> controllers = [];
     for (int i = 0; i < 5; i++) {
-      var sizeController = AnimationController(
+      final sizeController = AnimationController(
           duration: const Duration(milliseconds: 500), vsync: context);
-      var alphaTween = Tween(begin: 1.0, end: 0.4).animate(sizeController);
+      final alphaTween = Tween(begin: 1.0, end: 0.4).animate(sizeController);
       sizeController.addListener(() {
         scaleYDoubles[i] = alphaTween.value;
         postInvalidate();
@@ -37,7 +37,7 @@ class LineScaleProgressIndicator extends SpinnerIndicator {
 
   @override
   startAnims(List<AnimationController> controllers) {
-    var delays = [100, 200, 300, 400, 500];
+    final delays = [100, 200, 300, 400, 500];
     for (var i = 0; i < controllers.length; i++) {
       Future.delayed(Duration(milliseconds: delays[i]), () {
         if (context.mounted) controllers[i].repeat(reverse: true);

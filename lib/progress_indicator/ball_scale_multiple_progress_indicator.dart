@@ -2,15 +2,15 @@ import 'package:flutter/widgets.dart';
 import 'package:loading_progress_indicator/progress_indicator.dart';
 
 class BallScaleMultipleProgressIndicator extends SpinnerIndicator {
-  var scaleDoubles = [0.0, 0.0, 0.0];
-  var alphaInts = [255, 255, 255];
-  var delays = [0, 200, 200];
+  final scaleDoubles = [0.0, 0.0, 0.0];
+  final alphaInts = [255, 255, 255];
+  final delays = [0, 200, 200];
 
   @override
   paint(Canvas canvas, Paint? paint, Size size) {
-    var circleSpacing = 4;
-    var width = size.width;
-    var height = size.height;
+    const circleSpacing = 4;
+    final width = size.width;
+    final height = size.height;
     for (int i = 0; i < 3; i++) {
       paint!.color = paint.color.withAlpha(alphaInts[i]);
       canvas.drawCircle(Offset(width / 2, height / 2),
@@ -22,9 +22,9 @@ class BallScaleMultipleProgressIndicator extends SpinnerIndicator {
   List<AnimationController> animation() {
     List<AnimationController> controllers = [];
     for (int i = 0; i < 3; i++) {
-      var sizeController = AnimationController(
+      final sizeController = AnimationController(
           duration: const Duration(milliseconds: 1000), vsync: context);
-      var alphaTween = IntTween(begin: 255, end: 0).animate(sizeController);
+      final alphaTween = IntTween(begin: 255, end: 0).animate(sizeController);
       sizeController.addListener(() {
         scaleDoubles[i] = sizeController.value;
         alphaInts[i] = alphaTween.value;

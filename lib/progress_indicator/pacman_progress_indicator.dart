@@ -9,8 +9,8 @@ class PacmanProgressIndicator extends SpinnerIndicator {
 
   @override
   paint(Canvas canvas, Paint? paint, Size size) {
-    var x = size.width / 2;
-    var y = size.height / 2;
+    final x = size.width / 2;
+    final y = size.height / 2;
 
     canvas.save();
 
@@ -26,11 +26,13 @@ class PacmanProgressIndicator extends SpinnerIndicator {
     canvas.translate(x, y);
     canvas.rotate(degrees2);
     paint.color = paint.color.withAlpha(255);
+
     Rect rectF2 = Rect.fromLTRB(-x / 1.7, -y / 1.7, x / 1.7, y / 1.7);
+
     canvas.drawArc(rectF2, 90, 270, false, paint);
     canvas.restore();
 
-    var radius = size.width / 11;
+    final radius = size.width / 11;
     paint.color = paint.color.withAlpha(alpha);
     canvas.drawCircle(
         Offset((1 - translateX) * size.width, size.height / 2), radius, paint);
@@ -40,13 +42,13 @@ class PacmanProgressIndicator extends SpinnerIndicator {
   List<AnimationController> animation() {
     List<AnimationController> controllers = [];
 
-    var controller = AnimationController(
+    final controller = AnimationController(
         duration: const Duration(milliseconds: 325), vsync: context);
 
-    var translateTween = Tween(begin: 0, end: 0.5).animate(controller);
-    var alphaTween = IntTween(begin: 255, end: 122).animate(controller);
-    var rotateTween1 = Tween(begin: 0.0, end: 45.0).animate(controller);
-    var rotateTween2 = Tween(begin: 0.0, end: -45.0).animate(controller);
+    final translateTween = Tween(begin: 0, end: 0.5).animate(controller);
+    final alphaTween = IntTween(begin: 255, end: 122).animate(controller);
+    final rotateTween1 = Tween(begin: 0.0, end: 45.0).animate(controller);
+    final rotateTween2 = Tween(begin: 0.0, end: -45.0).animate(controller);
 
     controller.addListener(() {
       translateX = translateTween.value as double;
