@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:loading_progress_indicator/progress_indicator.dart';
 
-class BallScaleProgressIndicator extends ProgressIndicator {
+class BallScaleProgressIndicator extends SpinnerIndicator {
   int mAlpha = 0;
   double mScale = 0;
 

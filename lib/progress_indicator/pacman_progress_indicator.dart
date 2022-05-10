@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:loading_progress_indicator/progress_indicator.dart';
 
-class PacmanProgressIndicator extends ProgressIndicator {
+class PacmanProgressIndicator extends SpinnerIndicator {
   var translateX = 0.0;
   var alpha = 0;
   var degrees1 = 0.0;

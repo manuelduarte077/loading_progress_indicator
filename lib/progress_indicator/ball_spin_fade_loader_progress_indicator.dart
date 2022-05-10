@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/widgets.dart';
 import 'package:loading_progress_indicator/progress_indicator.dart';
 
-class BallSpinFadeLoaderProgressIndicator extends ProgressIndicator {
+class BallSpinFadeLoaderProgressIndicator extends SpinnerIndicator {
   var scaleDoubles = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0];
   var alphas = [255, 255, 255, 255, 255, 255, 255, 255];
 

@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:loading_progress_indicator/progress_indicator.dart';
 
-class LineScalePartyProgressIndicator extends ProgressIndicator {
+class LineScalePartyProgressIndicator extends SpinnerIndicator {
   var scaleDoubles = [1.0, 1.0, 1.0, 1.0];
   var durations = [630, 215, 505, 365];
 

@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:loading_progress_indicator/progress_indicator.dart';
 
-class LineScaleProgressIndicator extends ProgressIndicator {
+class LineScaleProgressIndicator extends SpinnerIndicator {
   var scaleYDoubles = [1.0, 1.0, 1.0, 1.0, 1.0];
 
   @override
