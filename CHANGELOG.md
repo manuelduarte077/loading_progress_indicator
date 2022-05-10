@@ -6,7 +6,7 @@
 
 - adding the license
 
-## 0.1.3
+## 0.1.4
 
 - adding the progress indicators, for the first version
 - [x] PacmanProgressIndicator
