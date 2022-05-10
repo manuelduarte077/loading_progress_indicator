@@ -1,4 +1,4 @@
-library loading_progress;
+library loading_progress_indicator;
 
 /// A Calculator.
 class Calculator {
