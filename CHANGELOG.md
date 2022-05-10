@@ -21,3 +21,7 @@
 - [x] LineScaleProgressIndicator
 - [x] LineScalePulseOutProgressIndicator
 - [x] PacmanProgressIndicator
+
+## 0.1.5
+
+- adding an example
