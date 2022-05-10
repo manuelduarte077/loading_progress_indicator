@@ -1,6 +1,6 @@
 name: loading_progress_indicator
 description: a flutter widget to indicate loading progress. Easy to use, easy to extend
-version: 0.0.1
+version: 0.0.3
 homepage: https://github.com/manuelduarte077/loading_progress_indicator
 
 environment:
