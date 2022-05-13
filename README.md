@@ -1,17 +1,15 @@
-
 ## Features
-- ✅ PacmanProgressIndicator
-- ✅ BallBeatProgressIndicator
-- ✅ BallGridPulseProgressIndicator
-- ✅ BallPulseProgressIndicator
-- ✅ BallScaleMultipleProgressIndicator
-- ✅ BallScaleProgressIndicator
-- ✅ BallScaleProgressIndicator
-- ✅ BallSpinFadeLoaderProgressIndicator
-- ✅ LineScalePartyProgressIndicator
-- ✅ LineScaleProgressIndicator
-- ✅ LineScalePulseOutProgressIndicator
-- ✅ PacmanProgressIndicator
+
+- ✅ BallPulseProgressIndicator(),
+- ✅ PacmanProgressIndicator(),
+- ✅ BallBeatProgressIndicator(),
+- ✅ BallGridPulseProgressIndicator(),
+- ✅ BallScaleProgressIndicator(),
+- ✅ BallScaleMultipleProgressIndicator(),
+- ✅ BallSpinFadeLoaderProgressIndicator(),
+- ✅ LineScaleProgressIndicator(),
+- ✅ LineScalePartyProgressIndicator(),
+- ✅ LineScalePulseOutProgressIndicator(),
 
 ## Getting started
 
@@ -23,10 +21,11 @@ $ flutter pub add loading_progress_indicator
 
 ```dart
   body: Center(
-    child: LoadingProgressIndicator (
-        indicator: BallPulseIndicator(),
-        size: 100.0,
-        color: Colors.pink,
+    child: LoadingProgressIndicator(
+      indicator: BallPulseIndicator(
     ),
+    size: 100.0,
+    color: Colors.pink,
+  ),
 ); 
 ```
