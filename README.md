@@ -22,10 +22,9 @@ $ flutter pub add loading_progress_indicator
 ```dart
   body: Center(
     child: LoadingProgressIndicator(
-      indicator: BallPulseProgressIndicator(
+        indicator: BallPulseProgressIndicator(),
+        size: 50,
+        color: Colors.indigo,
     ),
-    size: 100.0,
-    color: Colors.pink,
-  ),
-); 
+  ); 
 ```
