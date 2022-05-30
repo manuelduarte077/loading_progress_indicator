@@ -8,7 +8,6 @@
 </p>
 
 
-
 ## Features
 
 - ✅ BallPulseProgressIndicator(),
@@ -22,7 +21,12 @@
 - ✅ LineScalePartyProgressIndicator(),
 - ✅ LineScalePulseOutProgressIndicator(),
 
+
 ## Examples
+If you prefer you can download the example of the previous code from [here](https://github.com/manuelduarte077/loading_progress_indicator/blob/develop/example/lib/main.dart).
+
+<img height="500" alt="" src="docs/home.png"> 
+
 
 
 
