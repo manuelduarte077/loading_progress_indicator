@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import 'package:loading_progress_indicator/loading_progress_indicator.dart';
-
 import 'package:loading_progress_indicator/progress_indicator/ball_beat_progress_indicator.dart';
 import 'package:loading_progress_indicator/progress_indicator/ball_grid_pulse_progress_indicator.dart';
 import 'package:loading_progress_indicator/progress_indicator/ball_pulse_progress_indicator.dart';
@@ -12,7 +10,9 @@ import 'package:loading_progress_indicator/progress_indicator/line_scale_party_p
 import 'package:loading_progress_indicator/progress_indicator/line_scale_progress_indicator.dart';
 import 'package:loading_progress_indicator/progress_indicator/line_scale_pulse_out_progress_indicator.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Loading Progress Indicator'),
+          elevation: 0,
         ),
         body: LoadingProgressList(),
       ),
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
 class LoadingProgressList extends StatelessWidget {
   final indicatorProgressList = [
     BallPulseProgressIndicator(),
+    // PacmanProgressIndicator(),
     BallBeatProgressIndicator(),
     BallGridPulseProgressIndicator(),
     BallScaleProgressIndicator(),
@@ -51,19 +53,18 @@ class LoadingProgressList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: GridView.builder(
-        gridDelegate:
-            const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
-        itemCount: indicatorProgressList.length,
-        itemBuilder: (context, index) {
-          return Center(
-            child: LoadingProgressIndicator(
-              indicator: indicatorProgressList[index],
-              size: 50,
-              color: Colors.deepPurple,
-            ),
-          );
-        },
-      ),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 3),
+          itemCount: indicatorProgressList.length,
+          itemBuilder: (context, index) {
+            return Center(
+              child: LoadingProgressIndicator(
+                indicator: indicatorProgressList[index],
+                size: 50,
+                color: Colors.indigo,
+              ),
+            );
+          }),
     );
   }
 }

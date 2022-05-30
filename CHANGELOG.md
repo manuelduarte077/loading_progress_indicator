@@ -1,10 +1,11 @@
-## 0.0.1
+## 0.1.6
 
-- Describe initial release.
+- add documentation for the example and the progress indicators
+- upgrade to the latest version of flutter
+- fixing version order in Changelog
 
-## 0.0.2
-
-- adding the license
+## 0.1.5
+- adding an example
 
 ## 0.1.4
 
@@ -22,6 +23,14 @@
 - [x] LineScalePulseOutProgressIndicator
 - [x] PacmanProgressIndicator
 
-## 0.1.5
+## 0.0.2
 
-- adding an example
+- adding the license
+- adding the changelog
+
+## 0.0.1
+
+- Describe initial release.
+
+
+
