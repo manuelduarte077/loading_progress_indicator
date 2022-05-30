@@ -1,10 +1,6 @@
-## 0.0.1
 
-- Describe initial release.
-
-## 0.0.2
-
-- adding the license
+## 0.1.5
+- adding an example
 
 ## 0.1.4
 
@@ -22,6 +18,15 @@
 - [x] LineScalePulseOutProgressIndicator
 - [x] PacmanProgressIndicator
 
-## 0.1.5
 
-- adding an example
+## 0.0.2
+
+- adding the license
+- adding the changelog
+
+## 0.0.1
+
+- Describe initial release.
+
+
+
