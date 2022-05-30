@@ -1,3 +1,5 @@
+# loading_progress_indicator
+
 <p align="center">
 <a href="https://pub.dartlang.org/packages/loading_progress_indicator">
     <img alt="Pub Package" src="https://img.shields.io/pub/v/loading_progress_indicator.svg">
@@ -47,4 +49,4 @@ If you prefer you can download the example of the previous code from [here](http
 <img height="500" alt="" src="docs/home.png"> 
 
 <img height="500" alt="" src="https://github.com/manuelduarte077/loading_progress_indicator/blob/develop/docs/home.gif"> 
-</>
+</p>
