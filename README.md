@@ -46,7 +46,7 @@ $ flutter pub add loading_progress_indicator
 If you prefer you can download the example of the previous code from [here](https://github.com/manuelduarte077/loading_progress_indicator/blob/develop/example/lib/main.dart).
 
 <p align="center">
-<img height="500" alt="" src="docs/home.png"> 
+<img height="500" alt="" src="doc/home.png"> 
 
 <img height="500" alt="" src="https://github.com/manuelduarte077/loading_progress_indicator/blob/develop/docs/home.gif"> 
 </p>
