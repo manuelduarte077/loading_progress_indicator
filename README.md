@@ -48,5 +48,5 @@ If you prefer you can download the example of the previous code from [here](http
 <p align="center">
 <img height="500" alt="" src="doc/home.png"> 
 
-<img height="500" alt="" src="https://github.com/manuelduarte077/loading_progress_indicator/blob/develop/docs/home.gif"> 
+<img height="500" alt="" src="https://github.com/manuelduarte077/loading_progress_indicator/blob/develop/doc/home.gif"> 
 </p>
